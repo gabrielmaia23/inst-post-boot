@@ -1,7 +1,7 @@
 import os, sys, time, requests
 
-IG_USER_ID = os.environ.get("IG_USER_ID", "17841441253956976")
-TOKEN = os.environ["IG_TOKEN"]  # nunca escreva o token no código
+IG_USER_ID = os.environ.get("IG_USER_ID") or "17841441253956976"
+TOKEN = os.environ["IG_TOKEN"]
 BASE = "https://graph.facebook.com/v21.0"
 
 image_url = sys.argv[1]
